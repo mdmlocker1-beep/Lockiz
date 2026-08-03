@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LOCKIZ - কিস্তিতে মোবাইল বিক্রির ব্যবসাকে নিরাপদ ও নিয়ন্ত্রিত রাখুন। EMI Mobile Security & Device Management Solution for retailers and distributors across Bangladesh." />
+  <meta property="og:title" content="LOCKIZ - EMI Mobile Security & Management Solution" />
+  <meta property="og:description" content="কিস্তিতে মোবাইল বিক্রি করুন নিশ্চিন্তে। Remote Lock, Live Location, Auto EMI Alert সহ আরও অনেক কিছু।" />
+  <meta property="og:image" content="image/banner/App Banner 1.png" />
+  <meta name="theme-color" content="#EF4444" />
+  <title>LOCKIZ - কিস্তিতে মোবাইল বিক্রি করুন নিশ্চিন্তে</title>
+  <link rel="icon" href="image/logo.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- STICKY NAV -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="image/logo.jpg" alt="LOCKIZ Logo" class="nav-logo-img" />
+      <span class="nav-brand">LOCK<span class="brand-iz">IZ</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#screenshots">App Screen</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#demo-video">Demo Video</a>
+      <a href="#distributor">Distributor</a>
+      <a href="#download">Download</a>
+
+      <!-- Login Dropdown -->
+      <div class="nav-login-dropdown" id="loginDropdown">
+        <button class="nav-login-btn" id="loginDropdownBtn" aria-expanded="false" aria-haspopup="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v1h20v-1c0-3.3-6.7-5-10-5z"/></svg>
+          Login
+          <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="login-dropdown-menu" id="loginMenu" role="menu">
+          <div class="login-menu-header">Web Login Panel</div>
+          <a href="https://app.lockizpro.com/state-head/login" target="_blank" class="login-menu-item" id="login-state-head" role="menuitem">
+            <div class="login-menu-icon state-icon">🏛️</div>
+            <div class="login-menu-text">
+              <span class="login-menu-title">State-Head Login</span>
+              <span class="login-menu-desc">State level management</span>
+            </div>
+            <svg class="login-ext-icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          </a>
+          <a href="https://app.lockizpro.com/super-distributor/login" target="_blank" class="login-menu-item" id="login-super-dist" role="menuitem">
+            <div class="login-menu-icon super-icon">⭐</div>
+            <div class="login-menu-text">
+              <span class="login-menu-title">Super-Distributor Login</span>
+              <span class="login-menu-desc">Super distributor panel</span>
+            </div>
+            <svg class="login-ext-icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          </a>
+          <a href="https://app.lockizpro.com/distributor/login" target="_blank" class="login-menu-item" id="login-dist" role="menuitem">
+            <div class="login-menu-icon dist-icon">🤝</div>
+            <div class="login-menu-text">
+              <span class="login-menu-title">Distributor Login</span>
+              <span class="login-menu-desc">Distributor dashboard</span>
+            </div>
+            <svg class="login-ext-icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <a href="#contact" class="nav-cta">Contact Us</a>
+
+      <!-- Mobile-only login links (shown inside hamburger menu) -->
+      <div class="mobile-login-section">
+        <div class="mobile-login-label">🔐 Web Login Panel</div>
+        <a href="https://app.lockizpro.com/state-head/login" target="_blank" class="mobile-login-link" id="mob-login-state">
+          <span class="ml-icon">🏛️</span> State-Head Login
+        </a>
+        <a href="https://app.lockizpro.com/super-distributor/login" target="_blank" class="mobile-login-link" id="mob-login-super">
+          <span class="ml-icon">⭐</span> Super-Distributor Login
+        </a>
+        <a href="https://app.lockizpro.com/distributor/login" target="_blank" class="mobile-login-link" id="mob-login-dist">
+          <span class="ml-icon">🤝</span> Distributor Login
+        </a>
+      </div>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Bangladesh's #1 EMI Security Solution
+      </div>
+      <h1 class="hero-headline">
+        কিস্তিতে মোবাইল বিক্রি করুন<br/>
+        <span class="gradient-text">নিশ্চিন্তে</span>
+      </h1>
+      <p class="hero-sub">
+        কাস্টমার ফোন বন্ধ, ফ্ল্যাশ বা লোকেশন গায়েব?<br/>
+        <strong>LOCKIZ</strong> রাখবে আপনার কিস্তি ব্যবসা নিরাপদ ও নিয়ন্ত্রণে।
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">৫০০+</span>
+          <span class="stat-label">Active Retailers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">১০,০০০+</span>
+          <span class="stat-label">Devices Secured</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">৬৪</span>
+          <span class="stat-label">জেলা</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#download" class="btn btn-primary" id="hero-download-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-8 4h16v-2H4v2z"/></svg>
+          Download App
+        </a>
+        <a href="https://wa.me/8801866882120" target="_blank" class="btn btn-outline" id="hero-whatsapp-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.112 1.531 5.832L0 24l6.335-1.607A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.953 0-3.792-.54-5.367-1.48l-.385-.229-3.982 1.01 1.04-3.888-.252-.407A9.937 9.937 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Contact Now
+        </a>
+        <a href="#distributor" class="btn btn-ghost" id="hero-distributor-btn">Become Distributor →</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup-wrapper">
+        <div class="phone-glow"></div>
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <img src="image/app screen/Home.jpeg" alt="LOCKIZ App Dashboard" class="phone-img" />
+          </div>
+        </div>
+        <div class="float-badge float-badge-1">
+          <span class="float-icon">🔒</span>
+          <div>
+            <div class="float-title">Remote Lock</div>
+            <div class="float-desc">Active</div>
+          </div>
+        </div>
+        <div class="float-badge float-badge-2">
+          <span class="float-icon">📍</span>
+          <div>
+            <div class="float-title">Live Location</div>
+            <div class="float-desc">Tracking</div>
+          </div>
+        </div>
+        <div class="float-badge float-badge-3">
+          <span class="float-icon">💳</span>
+          <div>
+            <div class="float-title">EMI Alert</div>
+            <div class="float-desc">Auto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-label">About LOCKIZ</div>
+    <h2 class="section-title">LOCKIZ কী?</h2>
+    <p class="section-subtitle">
+      LOCKIZ একটি আধুনিক <strong>EMI Mobile Security</strong> ও <strong>Device Management Software</strong><br/>
+      যা কিস্তিতে মোবাইল বিক্রির ব্যবসাকে আরও নিরাপদ ও নিয়ন্ত্রিত করতে সাহায্য করে।
+    </p>
+    <div class="about-cards">
+      <div class="about-card">
+        <div class="about-card-icon">🛡️</div>
+        <h3>Device Security</h3>
+        <p>আপনার বিক্রি করা প্রতিটি ডিভাইসে পূর্ণ নিয়ন্ত্রণ বজায় রাখুন।</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">💡</div>
+        <h3>Smart EMI</h3>
+        <p>অটোমেটিক কিস্তি অ্যালার্ট এবং লেট পেমেন্টে ডিভাইস লক।</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">📊</div>
+        <h3>Retailer Dashboard</h3>
+        <p>সব কাস্টমার ও ডিভাইসের রিয়েলটাইম তথ্য এক জায়গায়।</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🌐</div>
+        <h3>Distributor Network</h3>
+        <p>সারা বাংলাদেশে ডিস্ট্রিবিউটর নেটওয়ার্ক মাধ্যমে সেবা প্রদান।</p>
+      </div>
+    </div>
+    <div class="about-banner">
+      <img src="image/banner/App Banner 1.png" alt="LOCKIZ App Banner" class="about-banner-img" />
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM & SOLUTION -->
+<section class="problem-solution" id="problem-solution">
+  <div class="container">
+    <div class="section-label">Problem & Solution</div>
+    <h2 class="section-title">আপনার ব্যবসার সমস্যা?<br/><span class="gradient-text">LOCKIZ সমাধান দেবে।</span></h2>
+    <div class="ps-grid">
+      <div class="ps-col problems-col">
+        <div class="ps-col-header problems-header">
+          <span class="ps-col-icon">⚠️</span>
+          <h3>সাধারণ সমস্যা</h3>
+        </div>
+        <div class="problem-list">
+          <div class="problem-item">
+            <span class="problem-icon">📵</span>
+            <div class="problem-text">
+              <strong>ফোন বন্ধ</strong>
+              <p>কাস্টমার কিস্তি না দিলে ফোন বন্ধ করে রাখে</p>
+            </div>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">🏃</span>
+            <div class="problem-text">
+              <strong>কিস্তি বাকি রেখে উধাও</strong>
+              <p>টাকা না দিয়ে কাস্টমার হারিয়ে যায়</p>
+            </div>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">💾</span>
+            <div class="problem-text">
+              <strong>ফোন ফ্ল্যাশ</strong>
+              <p>LOCKIZ বাইপাস করতে ফোন ফ্ল্যাশের চেষ্টা</p>
+            </div>
+          </div>
+          <div class="problem-item">
+            <span class="problem-icon">🚫</span>
+            <div class="problem-text">
+              <strong>লোকেশন গায়েব</strong>
+              <p>কাস্টমারের ঠিকানা বা লোকেশন পাওয়া যায় না</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ps-arrow">
+        <div class="arrow-circle">
+          <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>
+        </div>
+        <div class="lockiz-logo-center">
+          <img src="image/logo.jpg" alt="LOCKIZ" />
+          <span>LOCKIZ</span>
+        </div>
+      </div>
+      <div class="ps-col solutions-col">
+        <div class="ps-col-header solutions-header">
+          <span class="ps-col-icon">✅</span>
+          <h3>LOCKIZ সমাধান</h3>
+        </div>
+        <div class="solution-list">
+          <div class="solution-item">
+            <span class="solution-icon">🔒</span>
+            <div>
+              <strong>Remote Lock</strong>
+              <p>যেকোনো সময় দূর থেকে ফোন লক করুন</p>
+            </div>
+          </div>
+          <div class="solution-item">
+            <span class="solution-icon">🔔</span>
+            <div>
+              <strong>Auto EMI Alert</strong>
+              <p>কিস্তির তারিখে অটোমেটিক অ্যালার্ট পাঠায়</p>
+            </div>
+          </div>
+          <div class="solution-item">
+            <span class="solution-icon">📡</span>
+            <div>
+              <strong>Live Location</strong>
+              <p>রিয়েলটাইমে কাস্টমারের লোকেশন দেখুন</p>
+            </div>
+          </div>
+          <div class="solution-item">
+            <span class="solution-icon">🛡️</span>
+            <div>
+              <strong>Flash Protection</strong>
+              <p>ফোন ফ্ল্যাশ করলেও LOCKIZ থাকবে</p>
+            </div>
+          </div>
+          <div class="solution-item">
+            <span class="solution-icon">📱</span>
+            <div>
+              <strong>Retailer Control</strong>
+              <p>অ্যাপ থেকে সব ডিভাইস পরিচালনা করুন</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features" id="features">
+  <div class="features-bg"></div>
+  <div class="container">
+    <div class="section-label light">Features</div>
+    <h2 class="section-title light">শক্তিশালী সব ফিচার</h2>
+    <p class="section-subtitle light">আপনার কিস্তি ব্যবসাকে রক্ষা করার জন্য সব কিছু এক জায়গায়।</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-wrap">📍</div>
+        <h3>Live Location Tracking</h3>
+        <p>রিয়েলটাইমে কাস্টমারের সঠিক লোকেশন জানুন</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap">🔒</div>
+        <h3>Remote Lock / Unlock</h3>
+        <p>দূর থেকে যেকোনো মোবাইল লক বা আনলক করুন</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap">💳</div>
+        <h3>EMI Due Alert</h3>
+        <p>কিস্তির তারিখ মিস হলে অটো অ্যালার্ট পাবেন</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap">⏰</div>
+        <h3>Auto Device Lock</h3>
+        <p>নির্ধারিত সময়ে স্বয়ংক্রিয়ভাবে ডিভাইস লক</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap">💾</div>
+        <h3>Flash Protection</h3>
+        <p>ফোন ফ্ল্যাশ করলেও সফটওয়্যার অক্ষত থাকে</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap">🔌</div>
+        <h3>USB Block</h3>
+        <p>USB সংযোগ ব্লক করে ডেটা চুরি প্রতিরোধ করুন</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap">🔋</div>
+        <h3>Power Button Protection</h3>
+        <p>পাওয়ার বাটন দিয়ে বন্ধ করতে পারবে না</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap">🛡️</div>
+        <h3>Device Security</h3>
+        <p>সর্বোচ্চ নিরাপত্তা নিশ্চিত করুন প্রতিটি ডিভাইসে</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap">📱</div>
+        <h3>Retailer App Control</h3>
+        <p>রিটেইলার অ্যাপ থেকে সব কাস্টমার ম্যানেজ করুন</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrap">🌐</div>
+        <h3>Distributor Management</h3>
+        <p>ডিস্ট্রিবিউটর নেটওয়ার্ক পরিচালনা করুন সহজে</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="section-label">Process</div>
+    <h2 class="section-title">কিভাবে কাজ করে?</h2>
+    <p class="section-subtitle">মাত্র ৪টি ধাপে শুরু করুন আপনার নিরাপদ কিস্তি ব্যবসা</p>
+    <div class="steps-timeline">
+      <div class="step-item">
+        <div class="step-number">১</div>
+        <div class="step-line"></div>
+        <div class="step-content">
+          <div class="step-icon">📲</div>
+          <h3>Install LOCKIZ</h3>
+          <p>কাস্টমারের মোবাইলে LOCKIZ সফটওয়্যার ইনস্টল করুন।</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">২</div>
+        <div class="step-line"></div>
+        <div class="step-content">
+          <div class="step-icon">✅</div>
+          <h3>Activate Device</h3>
+          <p>ডিভাইস অ্যাক্টিভ করুন এবং কাস্টমার তথ্য সেট করুন।</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">৩</div>
+        <div class="step-line"></div>
+        <div class="step-content">
+          <div class="step-icon">🖥️</div>
+          <h3>Manage From App</h3>
+          <p>রিটেইলার অ্যাপ থেকে সব ডিভাইস পরিচালনা করুন।</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-number">৪</div>
+        <div class="step-line last"></div>
+        <div class="step-content">
+          <div class="step-icon">📊</div>
+          <h3>Monitor &amp; Control</h3>
+          <p>রিয়েলটাইম মনিটর করুন এবং প্রয়োজনে অ্যাকশন নিন।</p>
+        </div>
+      </div>
+    </div>
+    <div class="hiw-banner">
+      <img src="image/banner/App Banner 2.png" alt="LOCKIZ How It Works" class="hiw-banner-img" />
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS — PHONE MOCKUP GALLERY -->
+<section class="app-showcase" id="screenshots">
+  <div class="app-showcase-bg"></div>
+  <div class="container">
+    <div class="section-label light">App Screens</div>
+    <h2 class="section-title light">অ্যাপের ভেতরে দেখুন</h2>
+    <p class="section-subtitle light">LOCKIZ Retailer App-এর প্রতিটি স্ক্রিন ডিজাইন করা হয়েছে সহজ ব্যবহারের জন্য</p>
+
+    <!-- Phone mockup row -->
+    <div class="mockup-row">
+
+      <!-- Screen 1: Home -->
+      <div class="mockup-wrapper mockup-back" id="mock-1">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="image/app screen/Home.jpeg" alt="LOCKIZ Home Screen" onclick="openLightboxSrc('image/app screen/Home.jpeg')" />
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+        <div class="mockup-label">
+          <span class="mockup-dot"></span>Home Screen
+        </div>
+      </div>
+
+      <!-- Screen 2: Dashboard (center, elevated) -->
+      <div class="mockup-wrapper mockup-center" id="mock-2">
+        <div class="phone-frame phone-featured">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="image/app screen/home2.jpeg" alt="LOCKIZ Dashboard" onclick="openLightboxSrc('image/app screen/home2.jpeg')" />
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+        <div class="mockup-label">
+          <span class="mockup-dot active"></span>Dashboard
+        </div>
+      </div>
+
+      <!-- Screen 3: Profile -->
+      <div class="mockup-wrapper mockup-front" id="mock-3">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="image/app screen/Profile.jpeg" alt="LOCKIZ Profile" onclick="openLightboxSrc('image/app screen/Profile.jpeg')" />
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+        <div class="mockup-label">
+          <span class="mockup-dot"></span>Profile & Settings
+        </div>
+      </div>
+
+      <!-- Screen 4: Commands -->
+      <div class="mockup-wrapper mockup-back" id="mock-4">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="image/app screen/commend.jpeg" alt="LOCKIZ Commands" onclick="openLightboxSrc('image/app screen/commend.jpeg')" />
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+        <div class="mockup-label">
+          <span class="mockup-dot"></span>Device Commands
+        </div>
+      </div>
+
+    </div><!-- /mockup-row -->
+
+    <!-- Feature pills below phones -->
+    <div class="showcase-pills">
+      <span class="pill">🔒 Remote Lock</span>
+      <span class="pill">📍 Live Location</span>
+      <span class="pill">💳 EMI Tracking</span>
+      <span class="pill">⚡ Auto Lock</span>
+      <span class="pill">📊 Dashboard</span>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&#10005;</button>
+  <img id="lightbox-img" src="" alt="Preview" />
+</div>
+
+<!-- DEMO VIDEO SECTION -->
+<section class="demo-video" id="demo-video">
+  <div class="container">
+    <div class="section-label light">Demo Video</div>
+    <h2 class="section-title light">LOCKIZ ইনস্টলেশন ও ব্যবহার দেখুন</h2>
+    <p class="section-subtitle light">কিভাবে LOCKIZ সেটআপ করবেন এবং ব্যবহার করবেন — সম্পূর্ণ ভিডিও গাইড</p>
+    <div class="demo-video-container">
+      <div class="demo-video-frame">
+        <div class="video-embed-wrapper">
+          <!-- YouTube embed — replace VIDEO_ID with actual YouTube video ID -->
+          <iframe
+            id="demo-iframe"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+            title="LOCKIZ App Demo &amp; Installation Guide"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="demo-video-info">
+        <div class="demo-video-badge">📹 Full Tutorial</div>
+        <h3 class="demo-video-heading">ধাপে ধাপে LOCKIZ শিখুন</h3>
+        <ul class="demo-video-list">
+          <li>
+            <span class="demo-list-num">১</span>
+            <div>
+              <strong>APK ডাউনলোড ও ইনস্টল</strong>
+              <p>রিটেইলার ও কাস্টমার উভয় অ্যাপ ইনস্টল করার নিয়ম</p>
+            </div>
+          </li>
+          <li>
+            <span class="demo-list-num">২</span>
+            <div>
+              <strong>কাস্টমার ডিভাইস অ্যাক্টিভেশন</strong>
+              <p>নতুন কাস্টমার যোগ করুন এবং ডিভাইস রেজিস্টার করুন</p>
+            </div>
+          </li>
+          <li>
+            <span class="demo-list-num">৩</span>
+            <div>
+              <strong>EMI শিডিউল ও অ্যালার্ট সেটআপ</strong>
+              <p>কিস্তির তারিখ ও অটো লক কনফিগার করুন</p>
+            </div>
+          </li>
+          <li>
+            <span class="demo-list-num">৪</span>
+            <div>
+              <strong>রিমোট লক ও লোকেশন ট্র্যাকিং</strong>
+              <p>অ্যাপ থেকে যেকোনো ডিভাইস নিয়ন্ত্রণ করুন</p>
+            </div>
+          </li>
+        </ul>
+        <div class="demo-video-cta">
+          <a href="https://wa.me/8801866882120?text=LOCKIZ%20Demo%20%E0%A6%A6%E0%A7%87%E0%A6%96%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87" target="_blank" class="btn btn-primary" id="demo-wa-btn">
+            💬 লাইভ ডেমো নিন
+          </a>
+          <a href="#download" class="btn btn-outline-white" id="demo-download-btn">
+            ⬇️ Download App
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNERS SHOWCASE -->
+<section class="banners-showcase" id="banners">
+  <div class="container">
+    <div class="section-label">Our Media</div>
+    <h2 class="section-title">LOCKIZ ব্র্যান্ড গ্যালারি</h2>
+    <p class="section-subtitle">আমাদের প্রচারণামূলক ব্যানার এবং পোস্টার দেখুন</p>
+    <div class="banners-grid">
+      <div class="banner-item banner-wide" onclick="openLightbox(this)">
+        <img src="image/banner/Fb Cover.png" alt="LOCKIZ Facebook Cover — কিস্তি ব্যবসার ঝুঁকি কমান" />
+        <div class="gallery-overlay"><span>🔍 View Full</span></div>
+      </div>
+      <div class="banner-item" onclick="openLightbox(this)">
+        <img src="image/banner/App Banner 1.png" alt="LOCKIZ App Banner 1" />
+        <div class="gallery-overlay"><span>🔍 View Full</span></div>
+      </div>
+      <div class="banner-item" onclick="openLightbox(this)">
+        <img src="image/banner/App Banner 2.png" alt="LOCKIZ App Banner 2" />
+        <div class="gallery-overlay"><span>🔍 View Full</span></div>
+      </div>
+      <div class="banner-item" onclick="openLightbox(this)">
+        <img src="image/banner/App Banner 3.png" alt="LOCKIZ App Banner 3" />
+        <div class="gallery-overlay"><span>🔍 View Full</span></div>
+      </div>
+      <div class="banner-item banner-portrait" onclick="openLightbox(this)">
+        <img src="image/banner/Static - 1.png" alt="LOCKIZ Static Poster" />
+        <div class="gallery-overlay"><span>🔍 View Full</span></div>
+      </div>
+      <div class="banner-item banner-portrait" onclick="openLightbox(this)">
+        <img src="image/banner/Poster - 2...png" alt="LOCKIZ Distributor Poster" />
+        <div class="gallery-overlay"><span>🔍 View Full</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISTRIBUTOR SECTION -->
+<section class="distributor" id="distributor">
+  <div class="distributor-bg"></div>
+  <div class="container">
+    <div class="distributor-inner">
+      <div class="distributor-badge">🚀 সুযোগ সীমিত</div>
+      <h2 class="distributor-title">
+        সারা বাংলাদেশে<br/>
+        <span class="gradient-text">ডিস্ট্রিবিউটর নিয়োগ চলছে</span>
+      </h2>
+      <p class="distributor-sub">আপনার এলাকায় LOCKIZ-এর অফিশিয়াল ডিস্ট্রিবিউটর হোন এবং গড়ে তুলুন একটি লাভজনক ব্যবসা।</p>
+      <div class="distributor-benefits">
+        <div class="benefit-item">
+          <span class="benefit-icon">🏆</span>
+          <div>
+            <strong>Official Distributor</strong>
+            <p>বাংলাদেশে অফিশিয়াল ডিস্ট্রিবিউটর সার্টিফিকেট পাবেন</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">📈</span>
+          <div>
+            <strong>Business Growth</strong>
+            <p>নিজের ব্যবসা বাড়ান এবং আয় বৃদ্ধি করুন</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">📣</span>
+          <div>
+            <strong>Marketing Support</strong>
+            <p>ফ্রি মার্কেটিং ম্যাটেরিয়াল এবং সাপোর্ট পাবেন</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <span class="benefit-icon">🤝</span>
+          <div>
+            <strong>Dedicated Assistance</strong>
+            <p>ডেডিকেটেড সাপোর্ট টিম সবসময় আপনার পাশে</p>
+          </div>
+        </div>
+      </div>
+      <a href="https://wa.me/8801866882120?text=%E0%A6%86%E0%A6%AE%E0%A6%BF%20LOCKIZ%20Distributor%20%E0%A6%B9%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87" target="_blank" class="btn btn-primary btn-lg" id="distributor-apply-btn">
+        Apply Now &#8594; ডিস্ট্রিবিউটর হোন
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WELCOME OFFER -->
+<section class="welcome-offer" id="welcome-offer">
+  <div class="container">
+    <div class="offer-card">
+      <div class="offer-glow"></div>
+      <div class="offer-emoji">🎁</div>
+      <h2 class="offer-title">প্রথমবার LOCKIZ নিলেই</h2>
+      <div class="offer-highlight">৫টি লাইসেন্স সম্পূর্ণ ফ্রি!</div>
+      <p class="offer-desc">সীমিত সময়ের অফার। এখনই যোগাযোগ করুন এবং আপনার ব্যবসা শুরু করুন।</p>
+      <div class="offer-btns">
+        <a href="https://wa.me/8801866882120" target="_blank" class="btn btn-primary btn-lg" id="offer-whatsapp-btn">🎁 ফ্রি অফার নিন</a>
+        <a href="tel:+8801866882120" class="btn btn-outline-white btn-lg" id="offer-call-btn">📞 Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD SECTION -->
+<section class="download" id="download">
+  <div class="container">
+    <div class="section-label">Download</div>
+    <h2 class="section-title">LOCKIZ ডাউনলোড করুন</h2>
+    <p class="section-subtitle">রিটেইলার ও কাস্টমার — উভয়ের জন্য আলাদা অ্যাপ পাওয়া যাচ্ছে</p>
+    <div class="download-cards">
+      <div class="download-card">
+        <div class="download-icon">🏪</div>
+        <h3>Retailer App</h3>
+        <p>কিস্তি ব্যবসাদার ও মোবাইল শপ মালিকদের জন্য</p>
+        <ul class="download-features">
+          <li>✅ সব ডিভাইস ম্যানেজমেন্ট</li>
+          <li>✅ কাস্টমার যোগ করুন</li>
+          <li>✅ রিমোট লক / আনলক</li>
+          <li>✅ EMI ট্র্যাকিং</li>
+        </ul>
+        <div class="download-meta">
+          <span class="version-badge">Latest Version</span>
+          <span class="file-info">Android APK</span>
+        </div>
+        <a href="https://wa.me/8801866882120?text=Retailer%20APK%20Download%20%E0%A6%A6%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0" target="_blank" class="btn btn-primary" id="download-retailer-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-8 4h16v-2H4v2z"/></svg>
+          Download Retailer APK
+        </a>
+      </div>
+      <div class="download-card featured">
+        <div class="download-featured-badge">New</div>
+        <div class="download-icon">📱</div>
+        <h3>Customer App</h3>
+        <p>কাস্টমারের ফোনে ইনস্টল করার জন্য ডেডিকেটেড অ্যাপ</p>
+        <ul class="download-features">
+          <li>✅ EMI পেমেন্ট রিমাইন্ডার</li>
+          <li>✅ পেমেন্ট স্ট্যাটাস দেখুন</li>
+          <li>✅ ডিভাইস তথ্য</li>
+          <li>✅ সহজ ইন্টারফেস</li>
+        </ul>
+        <div class="download-meta">
+          <span class="version-badge">Latest Version</span>
+          <span class="file-info">Android APK</span>
+        </div>
+        <a href="https://wa.me/8801866882120?text=Customer%20APK%20Download%20%E0%A6%A6%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0" target="_blank" class="btn btn-primary" id="download-customer-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-8 4h16v-2H4v2z"/></svg>
+          Download Customer APK
+        </a>
+      </div>
+    </div>
+    <div class="download-note">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      APK ডাউনলোড করতে আমাদের WhatsApp-এ মেসেজ করুন অথবা সরাসরি কল করুন 01866-882120।
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title">সাধারণ প্রশ্নোত্তর</h2>
+    <p class="section-subtitle">আপনার মনে যা প্রশ্ন আসে তার উত্তর এখানেই পাবেন।</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" id="faq-1">
+          <span>LOCKIZ কী?</span>
+          <span class="faq-arrow">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>LOCKIZ একটি আধুনিক EMI Mobile Security ও Device Management Software। এটি কিস্তিতে মোবাইল বিক্রির ব্যবসাকে নিরাপদ ও নিয়ন্ত্রিত রাখে। Remote Lock, Live Location Tracking, Auto EMI Alert সহ অনেক শক্তিশালী ফিচার নিয়ে তৈরি।</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" id="faq-2">
+          <span>LOCKIZ কিভাবে কাজ করে?</span>
+          <span class="faq-arrow">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>কাস্টমারের মোবাইলে LOCKIZ সফটওয়্যার ইনস্টল করুন এবং ডিভাইস অ্যাক্টিভ করুন। এরপর রিটেইলার অ্যাপ থেকে সব ডিভাইস পরিচালনা করুন। কিস্তি মিস হলে অটো লক হয়, লোকেশন ট্র্যাক করা যায় এবং দূর থেকে লক/আনলক করা যায়।</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" id="faq-3">
+          <span>কিভাবে সেটআপ করবো?</span>
+          <span class="faq-arrow">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>আমাদের সাথে যোগাযোগ করুন। আমাদের টিম আপনাকে সম্পূর্ণ সেটআপ প্রক্রিয়ায় সাহায্য করবে। Retailer APK ডাউনলোড করুন, কাস্টমারের ফোনে ইনস্টল করুন এবং অ্যাক্টিভেশন কোড দিয়ে সক্রিয় করুন।</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" id="faq-4">
+          <span>কিভাবে ডিস্ট্রিবিউটর হবো?</span>
+          <span class="faq-arrow">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>আমাদের WhatsApp নম্বরে মেসেজ করুন অথবা সরাসরি কল করুন 01866-882120। আমাদের টিম আপনার সাথে যোগাযোগ করে ডিস্ট্রিবিউটর প্যাকেজ ও সুবিধা সম্পর্কে বিস্তারিত জানাবে।</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" id="faq-5">
+          <span>সাপোর্ট কিভাবে পাবো?</span>
+          <span class="faq-arrow">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>আমাদের ডেডিকেটেড সাপোর্ট টিম সপ্তাহের ৭ দিন কাজ করে। WhatsApp, Messenger বা সরাসরি কলের মাধ্যমে সাপোর্ট পেতে পারেন। নম্বর: 01866-882120।</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" id="faq-6">
+          <span>LOCKIZ কি সব ফোনে কাজ করে?</span>
+          <span class="faq-arrow">&#9660;</span>
+        </button>
+        <div class="faq-answer">
+          <p>LOCKIZ Android ডিভাইসে কাজ করে। Android 6.0 এবং তার উপরের ভার্সনে সর্বোত্তম পারফরম্যান্স পাওয়া যায়। বিস্তারিত জানতে আমাদের সাথে যোগাযোগ করুন।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="contact-bg"></div>
+  <div class="container">
+    <div class="section-label light">Contact</div>
+    <h2 class="section-title light">আমাদের সাথে যোগাযোগ করুন</h2>
+    <p class="section-subtitle light">যেকোনো প্রশ্ন, সাপোর্ট বা ডিস্ট্রিবিউটর আবেদনের জন্য এখনই যোগাযোগ করুন।</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-icon">📞</div>
+        <h3>Call Us</h3>
+        <p>সরাসরি কথা বলুন আমাদের সাথে</p>
+        <a href="tel:+8801866882120" class="contact-link" id="contact-call-btn">01866-882120</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">💬</div>
+        <h3>WhatsApp</h3>
+        <p>WhatsApp-এ মেসেজ করুন যেকোনো সময়</p>
+        <a href="https://wa.me/8801866882120" target="_blank" class="contact-link" id="contact-whatsapp-btn">Chat on WhatsApp</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">📘</div>
+        <h3>Facebook</h3>
+        <p>আমাদের Facebook পেজ ফলো করুন</p>
+        <a href="https://www.facebook.com/lockizapp" target="_blank" class="contact-link" id="contact-facebook-btn">facebook.com/lockizapp</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">🌐</div>
+        <h3>Website</h3>
+        <p>আমাদের অফিশিয়াল ওয়েবসাইট ভিজিট করুন</p>
+        <a href="https://www.lockizpro.com" target="_blank" class="contact-link" id="contact-website-btn">lockizpro.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="image/logo.jpg" alt="LOCKIZ" class="footer-logo" />
+      <div>
+        <div class="footer-brand-name">LOCKIZ</div>
+        <div class="footer-brand-tagline">EMI Mobile Security &amp; Management</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#distributor">Distributor</a>
+      <a href="#download">Download</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/lockizapp" target="_blank" class="social-btn" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+      </a>
+      <a href="https://wa.me/8801866882120" target="_blank" class="social-btn" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.112 1.531 5.832L0 24l6.335-1.607A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.953 0-3.792-.54-5.367-1.48l-.385-.229-3.982 1.01 1.04-3.888-.252-.407A9.937 9.937 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      </a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2026 LOCKIZ. All rights reserved. | Designed with &#10084;&#65039; for Bangladeshi Retailers
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY CONTACT BUTTONS -->
+<div class="sticky-contacts">
+  <a href="https://wa.me/8801866882120" target="_blank" class="sticky-btn sticky-wa" id="sticky-whatsapp" title="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.558 4.112 1.531 5.832L0 24l6.335-1.607A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.953 0-3.792-.54-5.367-1.48l-.385-.229-3.982 1.01 1.04-3.888-.252-.407A9.937 9.937 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+  <a href="https://m.me/lockizapp" target="_blank" class="sticky-btn sticky-msg" id="sticky-messenger" title="Messenger">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.373 0 0 5.373 0 12c0 3.314 1.342 6.313 3.516 8.484L3 24l3.984-.984A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm1.166 16.273l-3.068-3.234-5.993 3.234L10.6 9.727l3.147 3.234 5.914-3.234-6.495 6.546z"/></svg>
+    <span>Messenger</span>
+  </a>
+  <a href="tel:+8801866882120" class="sticky-btn sticky-call" id="sticky-call" title="Call">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    <span>Call</span>
+  </a>
+</div>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">&#8679;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
